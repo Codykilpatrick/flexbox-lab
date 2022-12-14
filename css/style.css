@@ -17,6 +17,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
+  background: #fff;
 }
 
 nav {
@@ -26,6 +27,17 @@ nav {
   height: 55px;
   padding: 0 24px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#search-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  margin: 24px;
+  background: white;
 }
 
 #destinations {
@@ -69,4 +81,48 @@ nav {
 
 #actions > :nth-child(3) {
   font-size: 12px;
+}
+
+#search-header > :first-child {
+  height: 100%;
+  width: 100%;
+}
+
+#search-header > :last-child {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  align-items: center;
+}
+#filter-search {
+  display: flex;
+  justify-content: space-between;
+}
+#filters {
+  display: flex;
+  height: 44px;
+  align-items: center;
+  justify-content: space-between;
+}
+#filters > * {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+#reccomended-btn > * {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  height: 35px;
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+p > button {
+  background-color: #fff;
+  border: none;
+  margin-left: -6px;
 }
